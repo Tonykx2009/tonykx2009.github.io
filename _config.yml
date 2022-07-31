@@ -1,1 +1,6 @@
 theme: jekyll-theme-midnight
+
+menu:
+  home: / || home
+  categories: /categories/ || th
+  tags: /tags/ || tags
