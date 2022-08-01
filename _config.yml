@@ -1,6 +1,6 @@
 theme: jekyll-theme-midnight
-name: 爱阅坊
+title: 爱阅坊
 menu:
-  home: / || home
-  categories: /categories/ || th
-  tags: /tags/ || tags
+  home: /
+  categories: /categories/
+  tags: /tags/
