@@ -3,7 +3,7 @@ theme: jekyll-theme-midnight
 
 # 插件
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
 
 # site (变量设置)-------------------------
 # 网站标题
