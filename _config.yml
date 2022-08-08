@@ -2,16 +2,18 @@
 theme: jekyll-theme-midnight
 
 # 插件
-plugins:
-  - jekyll-remote-theme
+# plugins:
+#  - jekyll-remote-theme
 
 # site (变量设置)-------------------------
 # 网站标题
 title: 爱阅坊
 # 网站描述
-# description: [.....]
+# description: [.....]show_downloads: false
+google_analytics:
 
-menu:
-  home: / || 首页
-  categories: /categories/ || 分类
-  tags: /tags/ || 标签
+
+
+# 定义分类生成目录
+# permalink: /:categories/:title/
+# permalink: /:year/:month/:day/:title:output_ext
