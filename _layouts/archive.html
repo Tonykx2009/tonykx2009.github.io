@@ -21,13 +21,22 @@
     <div class="wrapper">
 
       <section>
-        <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
-        </div>
+        <ul>
+		  {% for post in site.posts %}
+
+			{% unless post.next %}
+			  <h3>{{ post.date | date: '%Y' }}</h3>
+			{% else %}
+			  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+			  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+			  {% if year != nyear %}
+				<h3>{{ post.date | date: '%Y' }}</h3>
+			  {% endif %}
+			{% endunless %}
+
+			<li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+		  {% endfor %}
+		</ul>
 
         {{ content }}
 
