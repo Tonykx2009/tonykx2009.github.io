@@ -302,13 +302,29 @@ section {
 @media print, screen and (max-width: 480px) {
 
   #header {
-    margin-top: 5px;
+    margin-top: 0px;
+	height: 20px;
   }
 
   section {
     margin-top: 40px;
   }
   nav {
-    display: none;
+    max-width: 480px;
+	  a {
+          color: white;
+          border: 1px solid #5d910b;
+          background: linear-gradient(#93bd20, #659e10);
+          border-radius: 2px;
+          box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
+
+          background-color: #93bd20;
+          padding: 1px 2px;
+          margin-top: 6px;
+          line-height:14px;
+          font-size:14px;
+          display:inline-block;
+          text-align:center;
+	  }
   }
 }
