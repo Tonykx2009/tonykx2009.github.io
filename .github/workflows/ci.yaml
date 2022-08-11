@@ -25,5 +25,5 @@ jobs:
         uses: GitRML/delete-workflow-runs@main
         if: env.DELETE_OLD_WORKFLOW == 'true'
         with:
-          retain_days: 1
-          keep_minimum_runs: 3
+          retain_days: 2
+          keep_minimum_runs: 4
