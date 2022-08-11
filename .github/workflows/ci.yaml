@@ -2,6 +2,10 @@ on:
   push:
   pull_request:
     types: [opened, synchronize]
+
+env:
+  DELETE_OLD_WORKFLOW: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,3 +20,9 @@ jobs:
         run: script/bootstrap
       - name: test
         run: script/cibuild
+      - name: Delete old Workflow Runs
+        uses: GitRML/delete-workflow-runs@gh-pages
+        if: env.DELETE_OLD_WORKFLOW == 'true'
+        with:
+          retain_days: 1
+          keep_minimum_runs: 3
