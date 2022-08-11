@@ -1,3 +1,4 @@
+name: Building-GitHub-page
 on:
   push:
   pull_request:
