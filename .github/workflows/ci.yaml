@@ -22,7 +22,7 @@ jobs:
       - name: test
         run: script/cibuild
       - name: Delete old Workflow Runs
-        uses: GitRML/delete-workflow-runs@gh-pages
+        uses: GitRML/delete-workflow-runs@main
         if: env.DELETE_OLD_WORKFLOW == 'true'
         with:
           retain_days: 1
