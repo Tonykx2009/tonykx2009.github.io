@@ -17,9 +17,9 @@ jobs:
         swap-size-mb: 512
         remove-dotnet: 'true'
         remove-android: 'true'
-      - name: Delete old Workflow Runs
-        uses: GitRML/delete-workflow-runs@main
-        if: env.DELETE_OLD_WORKFLOW == 'true'
-        with:
-          retain_days: 2
-          keep_minimum_runs: 4
+    - name: Delete old Workflow Runs
+      uses: GitRML/delete-workflow-runs@main
+      if: env.DELETE_OLD_WORKFLOW == 'true'
+      with:
+        retain_days: 2
+        keep_minimum_runs: 4
