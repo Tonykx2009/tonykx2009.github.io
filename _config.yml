@@ -11,11 +11,7 @@ google_analytics:
 # 插件
 plugins:
   - jekyll-remote-theme
-  - jekyll-archives
 
-jekyll-archives:
-  enabled: categories
-  layout: default
 
 # 定义分类生成目录
 # permalink: /:categories/:title/
