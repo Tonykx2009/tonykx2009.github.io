@@ -15,7 +15,7 @@ plugins:
 
 jekyll-archives:
   enabled: categories
-  layout: archive
+  layout: default
 
 # 定义分类生成目录
 # permalink: /:categories/:title/
