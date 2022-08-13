@@ -2,8 +2,9 @@
 theme: jekyll-theme-midnight
 
 # 插件
-# plugins:
-#  - jekyll-remote-theme
+plugins:
+  - jekyll-remote-theme
+  - jekyll-archives
 
 # site (变量设置)-------------------------
 # 网站标题
@@ -16,4 +17,4 @@ google_analytics:
 
 # 定义分类生成目录
 # permalink: /:categories/:title/
-# permalink: /:year/:month/:day/:title:output_ext
+# permalink: /:year/:month/:day/:title:output_ex
