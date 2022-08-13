@@ -8,7 +8,7 @@
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'category_index.html')
+      self.read_yaml(File.join(base, '_layouts'), 'onecategory.html')
       self.data['category'] = category
 
       category_title_prefix = site.config['category_title_prefix'] || 'Category: '
@@ -20,7 +20,7 @@
     safe true
 
     def generate(site)
-      if site.layouts.key? 'category_index'
+      if site.layouts.key? 'onecategory'
         dir = site.config['category_dir'] || 'categories'
         site.categories.keys.each do |category|
           site.pages << CategoryPage.new(site, site.source, File.join(dir, category), category)
