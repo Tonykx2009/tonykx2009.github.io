@@ -14,5 +14,5 @@ plugins:
 
 
 # 定义分类生成目录
-# permalink: /:categories/:title/
+permalink: /:categories/:title/
 # permalink: /:year/:month/:day/:title:output_ex
