@@ -5,7 +5,7 @@ theme: jekyll-theme-midnight
 # 网站标题
 title: 爱阅坊
 # 网站描述
-# description: [.....]show_downloads: false
+# description: [.....]
 google_analytics:
 
 # 插件
@@ -14,5 +14,5 @@ plugins:
 
 
 # 定义分类生成目录
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 # permalink: /:year/:month/:day/:title:output_ex
