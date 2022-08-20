@@ -22,4 +22,4 @@ jobs:
       if: env.DELETE_OLD_WORKFLOW == 'true'
       with:
         retain_days: 1
-        keep_minimum_runs: 4
+        keep_minimum_runs: 2
