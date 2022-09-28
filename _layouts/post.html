@@ -19,6 +19,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <span>发布日期：{{ post.date | date:"%Y"}} 年 {{ post.date | date:"%m"}} 月 {{ post.date | date:"%d"}} 日</span>
       <section>
         {{ content }}
       </section>
