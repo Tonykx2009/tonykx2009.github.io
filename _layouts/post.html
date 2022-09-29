@@ -17,11 +17,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
   </head>
+
   <body>
     <div class="wrapper">
-      <ul style="width: 100%;text-align: left;" >
-        <li><span>作者：{% if page.author %}{{ page.author }} {% endif %} 发布日期： {{ page.date | date: "%Y-%m-%d" }}</span></li>
-     </ul>
+        <div style="width: 100%;text-align: left;top: 60px;" >
+          <span>作者：{% if page.author %}{{ page.author }} {% endif %} 发布日期： {{ page.date | date: "%Y-%m-%d" }}</span>
+        </div>
       <section>
         {{ content }}
       </section>
