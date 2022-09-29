@@ -18,6 +18,7 @@
     {% include head-custom.html %}
   </head>
   <body>
+    <span>作者：{% if page.author %}{{ page.author }} 发布日期： {{ page.date | date: "%d-%m-%y" }}</span>
     <div class="wrapper">
       <section>
         {{ content }}
