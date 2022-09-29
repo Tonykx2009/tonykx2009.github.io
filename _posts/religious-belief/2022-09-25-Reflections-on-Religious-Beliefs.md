@@ -1,5 +1,6 @@
 ---
 title: 关于宗教信仰的思考之一
+author: Tonykx2009
 layout: post
 categories: 宗教信仰
 tags: 
