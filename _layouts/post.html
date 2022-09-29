@@ -19,12 +19,12 @@
   </head>
   <body>
     <div class="wrapper">
+      <ul style="width: 100%;text-align: left;" >
+        <li><span>作者：{% if page.author %}{{ page.author }} {% endif %} 发布日期： {{ page.date | date: "%Y-%m-%d" }}</span></li>
+     </ul>
       <section>
         {{ content }}
       </section>
-    </div>
-    <div style="width: 100%;" >
-      <span>作者：{% if page.author %}{{ page.author }} {% endif %} 发布日期： {{ page.date | date: "%Y-%m-%d" }}</span>
     </div>
     {% include footer-custom.html %}
   </body>
