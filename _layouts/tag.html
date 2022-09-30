@@ -20,14 +20,22 @@
   <body>
     <div class="wrapper">
       <section>
-         {% for tag in site.tags %}
-		<!-- 输出标签名及文章数量 -->
-		<span><strong style="font-size: 18px;">{{ tag | first }}</strong> {{ tag | last | size }}</span>
-		<ul class="arc-list">
-			{% for post in tag.last %}
-				<li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+		<!-- 标签云 -->
+		<span  >
+			{% for tag in site.tags %}
+			  <a class="tags" href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 			{% endfor %}
-		</ul>
+		</span>
+		  
+		<!-- 输出标签名及文章列表 -->
+		{% for tag in site.tags %}
+		   <span id="{{ tag[0] }}">
+		   <span><strong style="font-size: 18px;">{{ tag | first }}</strong> {{ tag | last | size }}</span>
+		    <ul class="arc-list">
+				{% for post in tag.last %}
+					<li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
 		{% endfor %}
       </section>
     </div>
