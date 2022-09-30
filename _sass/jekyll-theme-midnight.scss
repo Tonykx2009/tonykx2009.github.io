@@ -1,14 +1,19 @@
 @import "normalize";
 @import "fonts";
 @import "rouge-base16-dark.scss";
+
 .tags {
     font-size: 14px;
     border: none;
     line-height: 28px;
     margin: 0 2px;
     margin-bottom: 8px;
-    background:  #C5C8C9;
+    background: #8e9699;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
 }
+
 body {
   padding:0px 0 20px 0px;
   margin: 0px;
