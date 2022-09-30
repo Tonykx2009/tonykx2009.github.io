@@ -19,7 +19,6 @@
   </head>
   <body>
     <div class="wrapper">
-
       <section>
         {% for category in site.categories %}
 		<!-- 输出分类名及文章数量 -->
@@ -30,9 +29,9 @@
 			{% endfor %}
 		</ul>
 		{% endfor %}
-
       </section>
-
     </div>
+	
+	{% include footer-custom.html %}
   </body>
 </html>

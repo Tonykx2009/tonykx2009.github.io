@@ -23,7 +23,6 @@
       <section>
         <ul>
 		  {% for post in site.posts %}
-
 			{% unless post.next %}
 			  <h3>{{ post.date | date: '%Y' }}</h3>
 			{% else %}
@@ -37,11 +36,9 @@
 			<li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
 		  {% endfor %}
 		</ul>
-
- 
-
       </section>
-
     </div>
+	
+	{% include footer-custom.html %}
   </body>
 </html>

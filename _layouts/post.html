@@ -21,12 +21,13 @@
   <body>
     <div class="wrapper" >
         <div style="width: 100%;text-align: left;margin-top: 70px;" >
-          <span>作者：{% if page.author %}{{ page.author }} {% endif %} 发布日期： {{ page.date | date: "%Y-%m-%d" }}</span>
+          <span>作者：{% if page.author %}{{ page.author }} {% endif %} 发布日期：{{ page.date | date: "%Y-%m-%d" }}</span>
         </div>
       <section style="margin: 0;margin-top: 0;">
         {{ content }}
       </section>
     </div>
+	
     {% include footer-custom.html %}
   </body>
 </html>
