@@ -33,7 +33,7 @@
 			  {% endif %}
 			{% endunless %}
 
-			<li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+			<li>{{ post.date | date: "%Y-%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
 		  {% endfor %}
 		</ul>
       </section>
@@ -42,3 +42,8 @@
 	{% include footer-custom.html %}
   </body>
 </html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+P
