@@ -1,5 +1,5 @@
 ---
-title: 习题解答
+title: 简明逻辑学：习题解答
 layout: post
 categories: 逻辑学简短入门
 tags: 

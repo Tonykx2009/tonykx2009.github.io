@@ -1,5 +1,5 @@
 ---
-title: 重译说明
+title: 简明逻辑学：重译说明
 layout: post
 categories: 逻辑学简短入门
 tags: 
